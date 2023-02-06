@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   background: rgb(237, 237, 237);
+  /* overflow: hidden; */
 }
 
 main-container {
@@ -8,8 +9,149 @@ main-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  
 }
 
-.flex {
+.navbar {
+  position: relative;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 0 10px;
+  width: 98%;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1rem;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.navbar a {
+list-style: none;
+text-decoration: none;
+color: black;
+font-size: 20px;
+}
+
+p {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.form-container {
+  margin: 10% 20% 25% 20%;
+}
+
+h1, #book-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto; 
+}
+
+h1 {
+  text-align: center;
+}
+
+#book-form {
+  margin-bottom: 80px;
+}
+
+#book-form p {
+  margin: 0;
+  font-size: 16px;
+}
+
+form > * {
+  margin: 10px;
+  padding: 10px;
+}
+
+form input {
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+form button {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.list-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20% 0 25% 0;
+}
+
+#book-list {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+#book-list li {
+  display: flex;
+  min-width: 350px;
+  width: 40rem;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(237, 237,237);
+  padding: 0 20px;
+}
+
+#book-list li:nth-child(odd) {
+  background: white;
+}
+
+#book-list button {
+  padding: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15%;
+  font-size: 20px;
+}
+
+.contact h3 {
+  font-size: 28px;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  justify-content: center;
+  font-size: 22px;
+}
+
+footer a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }

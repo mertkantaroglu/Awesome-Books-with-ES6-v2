@@ -32,7 +32,7 @@ export default class BookList {
     this.bookList.forEach((book, i) => {
       const newBook = document.createElement('li');
       newBook.innerHTML = `
-        <p>${book.title} by ${book.author}</p>
+        <p>"${book.title}" by ${book.author}</p>
         <button type="submit" class='remove-btn' id="${i}">Remove</button>
       `;
       list.appendChild(newBook);

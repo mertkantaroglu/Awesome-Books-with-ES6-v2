@@ -1,5 +1,8 @@
 import BookList from './modules/bookList.js';
 import { DateTime } from './modules/luxon.js';
+import {
+  listSection, listButton, addSection, bookAddButton, contactSection, contactButton,
+} from './modules/navbar.js';
 
 // Connect the classes
 const bookListObj = new BookList();
@@ -18,3 +21,22 @@ const showDate = () => {
 
 showDate();
 setInterval(showDate, 1000);
+
+// Navbar Item Display
+listButton.addEventListener('click', () => {
+  listSection.style.display = 'block';
+  addSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+bookAddButton.addEventListener('click', () => {
+  addSection.style.display = 'block';
+  listSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+contactButton.addEventListener('click', () => {
+  addSection.style.display = 'none';
+  listSection.style.display = 'none';
+  contactSection.style.display = 'block';
+});
