@@ -2,23 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Awesome Books</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome Book List</title>
   </head>
   <body>
-    <section>
-      <div class="main-container">
+    <main>
+      <navbar class="navbar flex">
+        <div class="nav-title">Awesome Books</div>
+        <div class="navItems flex">
+          <a href="#book-list"><div class="nav-list">List</div></a>
+          <a href="#book-form"><div class="nav-add">Add New</div></a>
+          <a href="#contact"><div class="nav-contact">Contact</div></a>
+        </div>
+      </navbar>
+      <section class="main-container">
         <h1>Awesome Books</h1>
-        <form class="form-input">
-          <ul class="book-container">
-            <li class="title" placeholder="Title"></li>
-            <li class="author" placeholder="Author"></li>
-          </ul>
-          <button class="add-btn" type="submit">Add</button>
+        <p id="date-time"></p>
+        <h1>Add a new book</h1>
+        <form id="book-form">
+          <input type="text" id="title" placeholder="Title" />
+          <input type="text" id="author" placeholder="Author" />
+          <button type="submit">Add</button>
+          <h2 id="datetime"></h2>
         </form>
-      </div>
-    </section>
+        <ul id="book-list"></ul>
+      </section>
+      <section class="contact" id="contact">
+        <h1>Contact Information</h1>
+        <p>
+          Do have any questions or you just want to say "Hello"? You can reach
+          out to us!
+        </p>
+        <ul>
+          <li>Our e-mail: awesomebooks@gmail.com</li>
+          <li>Our phone number: 0043 123 567 8910</li>
+          <li>Our address: Streetname 288, SF, CA</li>
+        </ul>
+      </section>
+      <footer>
+        <hr />
+        <p>
+          Copyright @ 2023 |
+          <a href="https://github.com/mertkantaroglu" target="_blank">Mert</a>
+        </p>
+      </footer>
+    </main>
     <script type="module" src="index.js"></script>
   </body>
 </html>

@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  background: rgb(237, 237, 237);
+}
+
+main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
