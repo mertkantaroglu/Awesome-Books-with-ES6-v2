@@ -1,18 +1,16 @@
 body {
   font-family: sans-serif;
   background: rgb(237, 237, 237);
+
   /* overflow: hidden; */
 }
 
-main-container {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  width: 60%;
   margin: auto;
-  
 }
 
 .navbar {
@@ -34,11 +32,21 @@ h3 {
   font-size: 24px;
 }
 
+footer a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
 .navbar a {
-list-style: none;
-text-decoration: none;
-color: black;
-font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: blue;
 }
 
 p {
@@ -51,11 +59,12 @@ p {
   margin: 10% 20% 25% 20%;
 }
 
-h1, #book-form {
+h1,
+#book-form {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: auto; 
+  margin: auto;
 }
 
 h1 {
@@ -64,6 +73,11 @@ h1 {
 
 #book-form {
   margin-bottom: 80px;
+}
+
+footer p {
+  justify-content: center;
+  font-size: 22px;
 }
 
 #book-form p {
@@ -77,7 +91,7 @@ form > * {
 }
 
 form input {
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.75);
 }
 
 form button {
@@ -86,7 +100,7 @@ form button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.75);
 }
 
 .list-section {
@@ -113,7 +127,7 @@ form button {
   width: 40rem;
   justify-content: space-between;
   align-items: center;
-  background: rgba(237, 237,237);
+  background: rgba(237, 237, 237);
   padding: 0 20px;
 }
 
@@ -143,15 +157,4 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-}
-
-footer p {
-  justify-content: center;
-  font-size: 22px;
-}
-
-footer a {
-  list-style: none;
-  text-decoration: none;
-  color: black;
 }
