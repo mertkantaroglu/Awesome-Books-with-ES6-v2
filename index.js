@@ -1,7 +1,7 @@
 import BookList from './modules/bookList.js';
 import { DateTime } from './modules/luxon.js';
 import {
-  listSection, listButton, addSection, bookAddButton, contactSection, contactButton,
+  bookListSection, listButton, addSection, bookAddButton, contactSection, contactButton,
 } from './modules/navbar.js';
 
 // Connect the classes
@@ -24,19 +24,19 @@ setInterval(showDate, 1000);
 
 // Navbar Item Display
 listButton.addEventListener('click', () => {
-  listSection.style.display = 'block';
-  addSection.style.display = 'none';
-  contactSection.style.display = 'none';
+  bookListSection.classList.remove('hidden');
+  addSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
 });
 
 bookAddButton.addEventListener('click', () => {
-  addSection.style.display = 'block';
-  listSection.style.display = 'none';
-  contactSection.style.display = 'none';
+  bookListSection.classList.add('hidden');
+  addSection.classList.remove('hidden');
+  contactSection.classList.add('hidden');
 });
 
 contactButton.addEventListener('click', () => {
-  addSection.style.display = 'none';
-  listSection.style.display = 'none';
-  contactSection.style.display = 'block';
+  bookListSection.classList.add('hidden');
+  addSection.classList.add('hidden');
+  contactSection.classList.remove('hidden');
 });

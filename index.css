@@ -1,8 +1,7 @@
 body {
   font-family: sans-serif;
   background: rgb(237, 237, 237);
-
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 main {
@@ -26,6 +25,10 @@ main {
 .nav-items {
   display: flex;
   gap: 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 h3 {
@@ -56,7 +59,7 @@ p {
 }
 
 .form-container {
-  margin: 10% 20% 25% 20%;
+  margin: 5% 15% 25% 15%;
 }
 
 h1,
@@ -97,10 +100,11 @@ form input {
 form button {
   width: 60px;
   display: flex;
+  box-shadow: 5px 5px 5px 0 rgb(0 0 0 / 75%);
+  background: white;
+  line-height: 12px;
+  align-self: flex-end;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.75);
 }
 
 .list-section {
@@ -108,7 +112,7 @@ form button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20% 0 25% 0;
+  margin-bottom: 50%;
 }
 
 #book-list {
@@ -119,6 +123,7 @@ form button {
   justify-content: space-between;
   align-items: center;
   padding: 0;
+  border-radius: 8px;
 }
 
 #book-list li {
@@ -137,13 +142,13 @@ form button {
 
 #book-list button {
   padding: 5px;
+  border-radius: 8px;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15%;
   font-size: 20px;
 }
 

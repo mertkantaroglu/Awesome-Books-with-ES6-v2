@@ -1,10 +1,12 @@
-const listSection = document.querySelector('.book-list');
+const navBarList = document.querySelector('.navbar');
 const listButton = document.querySelector('.nav-list');
-const addSection = document.querySelector('.book-form');
 const bookAddButton = document.querySelector('.nav-add');
-const contactSection = document.querySelector('.contact');
 const contactButton = document.querySelector('.nav-contact');
 
+const addSection = document.querySelector('.main-container');
+const bookListSection = document.querySelector('.booklist-section');
+const contactSection = document.querySelector('.contact');
+
 export {
-  listSection, listButton, addSection, bookAddButton, contactSection, contactButton,
+  navBarList, bookListSection, listButton, addSection, bookAddButton, contactSection, contactButton,
 };

@@ -7,7 +7,7 @@ export default class BookList {
     this.form = document.getElementById('book-form');
   }
 
-  // addBook(title, author) {
+  // Add Book
   addBook(event) {
     event.preventDefault();
     const title = document.getElementById('title');
@@ -20,12 +20,14 @@ export default class BookList {
     author.value = '';
   }
 
+  // Delete Book
   deleteBook(event) {
     this.bookList.splice(event.target.id, 1);
     this.save();
     this.showList();
   }
 
+  // Show List
   showList() {
     const list = document.querySelector('#book-list');
     list.innerHTML = '';
