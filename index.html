@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome Book List</title>
+  </head>
+  <body>
+    <main>
+      <navbar class="navbar">
+        <h3 class="nav-title">Awesome Books</h3>
+        <div class="nav-items">
+          <a href="#"><div class="nav-list">List</div></a>
+          <a href="#"><div class="nav-add">Add New</div></a>
+          <a href="#"><div class="nav-contact">Contact</div></a>
+        </div>
+      </navbar>
+      <p id="date-time"></p>
+      <section class="main-container hidden">
+        <div class="form-container">
+          <h1>Add a new book</h1>
+          <form id="book-form">
+            <input type="text" id="title" placeholder="Title" />
+            <input type="text" id="author" placeholder="Author" />
+            <button type="submit"><p>Add</p></button>
+            <h2 id="datetime"></h2>
+          </form>
+        </div>
+      </section>
+      <section class="booklist-section">
+        <div class="list-section">
+          <h2>All awesome books</h2>
+          <ul id="book-list"></ul>
+        </div>
+      </section>
+      <section class="contact hidden" id="contact">
+        <h3>Contact Information</h3>
+        <p>
+          Do have any questions or you just want to say "Hello"? You can reach
+          out to us!
+        </p>
+        <ul>
+          <li>Our e-mail: awesomebooks@gmail.com</li>
+          <li>Our phone number: 0043 123 567 8910</li>
+          <li>Our address: Streetname 288, SF, CA</li>
+        </ul>
+      </section>
+      <footer>
+        <hr />
+        <p>
+          Copyright @ 2023 |
+          <a href="https://github.com/mertkantaroglu" target="_blank"> Mert</a>
+        </p>
+      </footer>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
